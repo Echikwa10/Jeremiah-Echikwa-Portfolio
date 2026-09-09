@@ -1,0 +1,17 @@
+{
+  "name": "practice",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "styled-components": "^6.5.3",
+    "tailwindcss": "^4.3.3"
+  },
+  "description": ""
+}
