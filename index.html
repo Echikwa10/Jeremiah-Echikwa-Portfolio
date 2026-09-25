@@ -3,120 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jeremiah Echikwa Portfolio</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
-<body>
-    <div class="h-45 bg-amber-400 flex flex-col justify-center items-center text-center max-w-full overflow-x-hidden">
-        <h2 class="font-bold text-3xl">MY BLOG</h2>
-        <p>Welcome to the blog of <span class="bg-black text-white px-2 ml-0.5">unknown</span></p>
-    </div>
+<body class="max-w-full overflow-x-hidden box-border bg-white">
 
-    <div class="grid sm:grid-cols-3 m-12 gap-6 max-w-full overflow-x-hidden">
-        <div class="col-span-2 space-y-8">
-            <div class="shadow-xl/30">
-            <img src="/Images/testnow/woods.jpg.jpeg" alt="wood" class="h-70 w-full">
-            <h3 class="m-3 font-bold text-2xl">TITLE HEADING</h3>
-            <p class="m-3 pt-2">Title description, April 7, 2014</p>
-            <p class="m-3 pt-6">Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-            <div class="flex justify-between items-center m-3 gap-2 pb-3.5">
-                <button class="border border-gray-300 py-2 px-5 font-bold hover:bg-gray-400 hover:border-none">READ MORE <i class="fa-solid fa-forward"></i></button>
-                <p>Comments <span class="bg-black text-white px-2">0</span></p>
-            </div>
-            </div>
-            
-            <div class="shadow-xl/30">
-            <img src="/Images/testnow/bridge.jpg.jpeg" alt="bridge" class="h-70 w-full">
-            <h3 class="m-3 font-bold text-2xl">BLOG ENTRY</h3>
-            <p class="m-3 pt-2">Title description, April 7, 2014</p>
-            <p class="m-3 pt-6">Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-            <div class="flex justify-between items-center m-3 gap-2 pb-3.5">
-                <button class="border border-gray-300 py-2 px-5 font-bold hover:bg-gray-400 hover:border-none">READ MORE <i class="fa-solid fa-forward"></i></button>
-                <p class="">Comments <span class="bg-black text-white px-2 rounded-full">2</span></p>
-            </div>
-            </div>
-
+    <!-- nav -->
+     <nav class="fixed top-0 left-0 z-50 bg-white w-full">
+        <div class="flex p-4 justify-between items-center border-b border-gray-200">
+        <div>
+            <p class="text-[#4f46e5] font-bold text-2xl">JE.</p>
         </div>
 
-        <div class="space-y-12 max-w-full overflow-x-hidden">
-            <div class="bg-green-500 shadow-xl/30">
-                <img src="/Images/testnow/avatar_g.jpg.jpeg" alt="avatar_g" class="w-full h-67.5">
-                <h3 class="m-3 font-bold text-2xl">My Name</h3>
-                <p class="m-3 pb-3.5">Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
-            </div>
-
-            <div class="shadow-xl/30">
-                <h3 class="m-3 text-2xl bg-gray-200 p-2.5">Popular Posts</h3>
-                <div class="flex p-2.5 gap-4 border border-b-gray-400 border-t-0 border-x-0 m-3">
-                    <img src="/Images/testnow/workshop.jpg.jpeg" alt="workshop" class="w-12.5">
-                    <div>
-                        <p>Lorem</p>
-                        <p>Sed mattis nunc</p>
-                    </div>
+        <!-- hamburger & X -->
+        <div class="md:hidden">
+            <button class="flex flex-col justify-center items-center" id="menu-btn" aria-label="open menu">
+                <div id="hamburger" class="flex flex-col gap-1.5 text-center">
+                    <span class="block h-0.5 w-4 bg-gray-500"></span>
+                    <span class="block h-0.5 w-4 bg-gray-500"></span>
+                    <span class="block h-0.5 w-4 bg-gray-500"></span>
                 </div>
-                
-                <div class="flex p-2.5 gap-4 border border-b-gray-400 border-t-0 border-x-0 m-3">
-                    <img src="/Images/testnow/gondol.jpg.jpeg" alt="workshop" class="w-12.5">
-                    <div>
-                        <p>Ipsum</p>
-                        <p>Praes tinci sed</p>
-                    </div>
+                <div class="font-bold text-gray-500 hidden" id="close-icon">
+                    X
                 </div>
-                
-                <div class="flex p-2.5 gap-4 border border-b-gray-400 border-t-0 border-x-0 m-3">
-                    <img src="/Images/testnow/skies.jpg.jpeg" alt="workshop" class="w-12.5">
-                    <div>
-                        <p>Dorum</p>
-                        <p>Ultricies congue</p>
-                    </div>
-                </div>
-                
-                <div class="flex p-2.5 gap-4 m-3">
-                    <img src="/Images/testnow/rock.jpg.jpeg" alt="workshop" class="w-12.5">
-                    <div>
-                        <p>Mingsum</p>
-                        <p>Lorem ipsum dipsum</p>
-                    </div>
-                </div>
-                
-            </div>
-
-            <div class="shadow-xl/30">
-                <h3 class="m-3 text-2xl bg-gray-200 p-2.5">Tags</h3>
-                <div class="space-x-2.5 m-3">
-                    <span class="bg-black text-white px-2">Travel</span>
-                    <span class="bg-gray-200">New York</span>
-                    <span class="bg-gray-200">London</span>
-                    <span class="bg-gray-200">IKEA</span>
-                    <span class="bg-gray-200">NORWAY</span>
-                    <span class="bg-gray-200">DIY</span>
-                    <span class="bg-gray-200">Ideas</span>
-                    <span class="bg-gray-200">Baby</span>
-                    <span class="bg-gray-200">Family</span>
-                    <span class="bg-gray-200">News</span>
-                    <span class="bg-gray-200">Clothing</span>
-                    <span class="bg-gray-200">Shopping</span>
-                    <span class="bg-gray-200">Sports</span>
-                    <span class="bg-gray-200">Games</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="bg-gray-500 max-w-full overflow-x-hidden">
-        <div class="flex gap-3 m-4 p-4">
-            <div class="bg-[#cccccc] text-gray-200 p-2.5 hover:bg-gray-100 hover:text-black hover:cursor-not-allowed">
-                <p>Previous</p>
-            </div>
-            <div class="bg-black text-white p-2.5 hover:bg-gray-300 hover:text-black hover:cursor-pointer">
-                <p>Next <i class="fa-solid fa-forward"></i></p>
-            </div>
+            </button>
         </div>
 
-        <p class="text-white m-4 p-4">Designed by Jeremiah Echikwa</p>
+        <!-- md menu -->
+         <div class="hidden md:block">
+            <div class="text-gray-500 flex justify-center items-center font-bold">
+                <div class="p-4 hover:text-[#4f46e5] w-full  text-center">
+                    <a href="#home">Home</a>
+                </div>
+                <div class="p-4 hover:text-[#4f46e5] w-full  text-center">
+                    <a href="#about">About</a>
+                </div>
+                <div class="p-4 hover:text-[#4f46e5] w-full text-center">
+                    <a href="#certificates">Certificates</a>
+                </div>
+            </div>
+         </div>
+        </div>
 
-    </div>
+        <!-- hamburger menu -->
+         <div id="mobile-menu" class="hidden absolute left-0 top-20 z-1 w-full h-[calc(100vh-5rem)] bg-white">
+            <div class="text-gray-500 flex flex-col justify-center items-center p-8 font-bold">
+                <div class="p-4 hover:text-[#4f46e5] w-full  text-center">
+                    <a href="#home">Home</a>
+                </div>
+                <div class="p-4 hover:text-[#4f46e5] w-full  text-center">
+                    <a href="#about">About</a>
+                </div>
+                <div class="p-4 hover:text-[#4f46e5] w-full text-center">
+                    <a href="#certificates">Certificates</a>
+                </div>
+            </div>
+         </div>
+
+         <!-- script -->
+          <script>
+            const menuBtn = document.getElementById("menu-btn");
+            const mobileMenu = document.getElementById("mobile-menu");
+            const hamburger = document.getElementById("hamburger");
+            const closeIcon = document.getElementById("close-icon");
+
+            menuBtn.addEventListener("click", () => {
+             mobileMenu.classList.toggle("hidden");
+             hamburger.classList.toggle("hidden");
+             closeIcon.classList.toggle("hidden");
+            })
+          </script>
+     </nav>
+
+     <!-- hero section -->
+      <div class="px-2 text-center mx-auto pt-24 md:pt-62 pb-16 overflow-hidden flex flex-col justify-center items-center" id="home">
+        <h2 class="text-[#4f46e5] text-sm md:text-lg font-semibold mb-3">HELLO, I'M</h2>
+        <h1 class="text-5xl font-extrabold text-gray-700 mb-6 md:text-7xl">Jeremiah Echikwa</h1>
+        <p class="text-lg text-gray-500 mt-4 md:text-2xl font-semibold md:max-w-180 text-center">A passionate Web Developer. I specialize in crafting beautiful, responsive, and robust digital experiences.</p>
+        <div class="flex justify-center mt-10 gap-4 ">
+            <a href="#" class="text-white bg-[#4f46e5] hover:bg-[#291eee] px-6 py-2 md:px-8 md:py-3 rounded-lg shadow md:font-semibold">View My Work</a>
+            <a href="#" class="text-black border border-gray-200 hover:bg-gray-200 bg-white px-6 py-2 md:px-8 md:py-3 md:font-semibold rounded-lg shadow">About Me</a>
+        </div>
+      </div>
+
+      <!-- About Me -->
+       <section class="py-10" id="about">
+        <div class="p-4 flex flex-col gap-8 md:p-16 md:grid md:grid-cols-2 md:gap-16">
+
+            <!-- About me side -->
+            <div class="flex flex-col gap-4">
+                <div>
+                    <h2 class="text-gray-700 font-bold text-2xl md:text-3xl">About Me</h2>
+                    <div class="bg-[#4f46e5] h-0.5 rounded-full w-14 md:w-18 md:h-1"></div>
+                </div>
+                <p class="text-gray-500 text-sm md:text-lg">With a strong foundation in Computer Science from the prestigious University of Cross River, I have dedicated myself to mastering the art and science of web development. My focus lies in building clean, efficient, and user-centric web applications from the ground up.</p>
+                <p class="text-gray-500 text-sm md:text-lg">While my primary expertise is deeply rooted in modern web technologies, I also bring professional experience in video editing to the table. This multimedia background enhances my ability to understand digital content delivery comprehensively and allows me to contribute to multifaceted digital projects.</p>
+            </div>
+
+            <!-- Technical Skills -->
+             <div class="flex flex-col gap-4 md:gap-8">
+                <div>
+                    <h2 class="text-gray-700 font-bold text-2xl md:text-3xl">Technical Skills</h2>
+                </div>
+
+                <div class="flex flex-wrap gap-3">
+                    <span class="bg-gray-100 text-gray-500 px-4 py-2 rounded-full font-medium border border-gray-200">HTML5</span>
+                    <span class="bg-gray-100 text-gray-500 px-4 py-2 rounded-full font-medium border border-gray-200">CSS3</span>
+                    <span class="bg-gray-100 text-gray-500 px-4 py-2 rounded-full font-medium border border-gray-200">JavaScript</span>
+                    <span class="bg-gray-100 text-gray-500 px-4 py-2 rounded-full font-medium border border-gray-200">Tailwind CSS</span>
+                    <span class="bg-gray-100 text-gray-500 px-4 py-2 rounded-full font-medium border border-gray-200">Bootstrap</span>
+                    <span class="bg-gray-100 text-gray-500 px-4 py-2 rounded-full font-medium border border-gray-200">React</span>
+                    <span class="bg-gray-100 text-gray-500 px-4 py-2 rounded-full font-medium border border-gray-200">Node.js</span>
+                    <span class="bg-gray-100 text-gray-500 px-4 py-2 rounded-full font-medium border border-gray-200">PHP</span>
+                    <span class="bg-gray-100 text-gray-500 px-4 py-2 rounded-full font-medium border border-gray-200">Laravel</span>
+                    <span class="bg-gray-100 text-gray-500 px-4 py-2 rounded-full font-medium border border-gray-200">WordPress</span>
+                </div>
+
+                <div>
+                    <h2 class="text-gray-700 font-bold text-2xl md:text-3xl">Other Skills</h2>
+                </div>
+
+                <div>
+                    <span class="text-white bg-gray-700 font-semibold text-sm px-4 py-2 rounded-full">Video Editing</span>
+                </div>
+             </div>
+        </div>
+       </section>
+
+       <!-- Certifications & Experience -->
+        <section class="py-20" id="certificates">
+            <div class="flex flex-col justify-center items-center">  
+                <div class="p-16">
+                    <h2 class="text-gray-700 font-bold text-2xl md:text-3xl text-center">Certifications & Experience</h2>
+                    <p class="text-gray-500 text-sm md:text-lg text-center">A showcase of my formal training and professional industry experience.</p>
+                </div>
+                
+                <div class="flex flex-col gap-4 md:flex-row md:px-16">
+                    <div class="m-4 shadow-2xl rounded-lg">
+                        <div>
+                            <img class="rounded-t-lg" src="/Images/practiceimages/Speedlinknew.jpeg" alt="Speedlink">
+                        </div>
+                        <div class="p-4 flex flex-col gap-2">
+                            <h3 class="text-[#4f46e5] text-sm font-semibold">Web Development</h3>
+                            <h2 class="font-bold text-gray-700">Full Stack Web Development</h2>
+                            <p class="text-gray-500 text-sm md:text-lg">Successfully completed a rigorous 7-month professional training program at <span class="text-gray-600 font-semibold">Speedlink Hi-Tech Solutions Limited</span>. The curriculum extensively covered modern web technologies including WordPress, HTML, CSS, Bootstrap, Tailwind, JavaScript, React, Node.js, PHP, and Laravel.</p>
+                        </div>
+                    </div>
+
+                    <div class="m-4 shadow-2xl rounded-lg">
+                        <div>
+                            <img class="rounded-t-lg" src="/Images/practiceimages/daarnew.jpeg" alt="AIT">
+                        </div>
+                        <div class="p-4 flex flex-col gap-2">
+                            <h3 class="text-[#4f46e5] text-sm font-semibold">Video Editing / Production</h3>
+                            <h2 class="font-bold text-gray-700">Industrial Training - ENG Editing Unit</h2>
+                            <p class="text-gray-500 text-sm md:text-lg">Completed a 6-month industrial training attachment at the Port Harcourt station of <span class="text-gray-600 font-semibold">DAAR Communications PLC (AIT).</span> Served in the ENG Editing Unit of the Programming/Production Department, acquiring practical theoretical and hands-on skills in professional video editing..</p>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- footer -->
+         <footer class="bg-gray-700 p-12 md:flex md:justify-between md:items-center">
+            <div>
+                <h2 class="text-white font-bold text-2xl p-1">JE.</h2>
+                <p class="text-gray-500 p-1">Crafting digital experiences</p>
+            </div>
+
+            <div>
+                <p class="text-gray-500 p-1">© 2026 Jeremiah Echikwa. All rights reserved.</p>
+            </div>
+         </footer>
+    
+   
 </body>
 </html>
